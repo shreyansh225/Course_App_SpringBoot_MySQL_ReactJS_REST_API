@@ -1,0 +1,25 @@
+Client - can be a device or a browser that can send requests to a Server(app is hosted on a server)
+
+Presentation Layers (Controllers) - (Waiter)
+1. Controllers will be the first to accept Requests ( Eg- the first waiter to take ur order in a restaurant is like the controller which has accepted the request)
+2. But they don't work on it and can use the service layer for the Business login  
+3. Service Layer will be used to run the Java classes
+
+Service Layers - (Cook/Chef)
+1. The classes in Service Layers will Execute the Business Logic and contains the methods(Rooti) to provide service
+2. It is often divided into 2 layers Service and Business Layer. But is only a single Layer
+3. Service Layer provides Services to the Controllers
+4. It will request the Dao Layer to get the data(flour) from DB to make methods(Rooti)
+
+Repository Layer/ DAO - (Errand Boy/Person that brings ingredients from the inventory or storeroom)
+1. If Service Layer(cook) wants to make a method(Rooti) 
+2. Then the DAO Layer(Errand Boy) will fetch the data(flour) from Database(Inventory)
+3. Dao will fetch data(flour) from Database and give it to Service layer(Cook) 
+4. and then it will move to Controllers which will send the Response to the client
+
+Database - (Inventory/ Stock of ingredients needed to cook)
+1. Table of data and values(Stock of incredients)
+
+
+DAO ( Data Access Object )
+API ( Application Program Interface )
