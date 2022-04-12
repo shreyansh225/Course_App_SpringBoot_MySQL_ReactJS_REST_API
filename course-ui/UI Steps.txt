@@ -1,0 +1,78 @@
+Step 1: Create a new folder(components) by right-clicking on src. This Components folder will contain all the components for the project.
+
+Step 2: Installing dependencies like ReactStrap(Bootstrap for react), or using some libraries for alert
+
+Step 3: Google ReactStrap(https://reactstrap.github.io/?path=/story/home-installation--page)
+	  and in cmd type (npm install bootstrap reactstrap)
+		Bootstrap will give us css and Reactstrap will give us its components
+
+Step 4: Write (import 'bootstrap/dist/css/bootstrap.min.css';) in the index.js file
+
+Step 5: Write (import { Button } from 'reactstrap';) in App.js file
+
+Step 6: Google React toastify(https://fkhadra.github.io/react-toastify/installation)
+	  and in cmd type (npm install react-toastify)
+
+Step 7: Write (import 'react-toastify/dist/ReactToastify.css';) in index.js file
+
+Step 8: Write (import { ToastContainer , toast } from  "react-toastify";)   in App.js
+
+Step 9: Google react axios(https://www.digitalocean.com/community/tutorials/react-axios-react)
+		and in cmd type (npm install axios)
+	used to call react web services using react( using axios we will call the apis and urls
+
+Step 10: U won't be able to use Jumbotron as it is no longer available in the latest Bootstrap 5 
+        ((((Write (import {Jumbotron} from  "reactstrap";)   in Home.js))) this wont work
+	(https://6-4-0--reactstrap.netlify.app/components/jumbotron/)
+
+Step 11: Add the below CSS in App.css file and insted of using <Jumbotron></Jumbotron> use <div class="jumbotron"></div>
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+}
+
+.jumbotron {
+  background-color: #eee;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+Step 12: Install the Extension(Simple React Snippet) in VS Code
+
+Step 13: After the Creation of Components ( AddCourses, AllCourses, Course, Header, Home, Menu, UpdateCourse)
+		Now we have to do the Routing
+
+Step 14: Google react router DOM (https://v5.reactrouter.com/web/guides/quick-start)
+		npm install react-router-dom
+
+Step 15: import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; in App.js
+		Must refer to (https://reacttraining.com/blog/react-router-v6-pre/) in case of using v6 of react router dom
+
+Step 16: To avoid refreshing we must not use href="" in Menus.js and instead we must use to=""
+
+Step 17: Every React component has its own life cycle. When a component is added then (ComponentDidMount) happens
+		When a component is updated then (ComponentDidUpdate) happens
+		When a component is deleted then (ComponentDidUnmount) happens
+
+Step 18: Google react Hooks ( https://reactjs.org/docs/hooks-intro.html )
